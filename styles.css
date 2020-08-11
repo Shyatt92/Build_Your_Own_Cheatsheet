@@ -1,0 +1,107 @@
+h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;
+    color: #091034
+}
+
+p, figcaption, li, th, td {
+    font-family: 'Roboto', sans-serif;
+    color: #091034
+}
+
+header {
+    text-align: center;
+    background-color: #FBA90A;
+    margin: auto;
+    padding: 20px;
+}
+
+header p {
+    font-weight: bold;
+    font-size: 20px;
+    color: #1430B8;
+}
+
+ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    overflow: hidden;
+    background-color: #FBA90A;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+li a:hover {
+    background-color: #F7EBD4;
+  }
+
+h2, figure {
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    color: #183BF0;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+figcaption {
+    color: gray;
+    font-size: 15px;
+}
+
+main {
+    text-align: center;
+    background-color: #F7EBD4;
+    padding: 20px;
+}
+
+footer {
+    background-color: #091034;
+    text-align: right;
+    color: #FBA90A;
+    padding: 20px;
+}
+
+footer a {
+    color: #FBA90A;
+}
+
+img {
+    height: 0.5;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.special-header {
+    background-color: #091034;
+    color: #FBA90A;
+}
+
+.tag {
+    background-color:  lightgray;
+    color: black;
+    font-family: monospace;
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Steve's HTML Tables Cheat Sheet
+        </title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+        <link href="./styles.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h1>HTML Tables</h1>
+            <p>A brief introduction to HTML tables</p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#basic">Basic Table Structure</a></li>
+                <li><a href="#formatting">Formatting</a></li>
+                <li><a href="#summary">Summary</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="basic">
+                <h2>Basic Table Structure</h2>
+                <figure>
+                    <img src="./images/basic-table.jpg" alt="A basic HTML table format">
+                    <figcaption>A table showing how HTML tags transcribe to a table</figcaption>
+                </figure>
+                <h3>Defining a Table</h3>
+                <section id="table">
+                    <h4>&lt;table&gt;&lt;/table&gt;</h4>
+                    <p>To get started, we have to define our table in HTML. We do this by using the <span class="tag">&lt;table&gt;&lt;/table&gt;</span> tags. All other information relating to this table must then be placed between these tags.</p>
+                </section>
+                <section id="table-head">
+                    <h4>&lt;thead&gt;&lt;/thead&gt;</h4>
+                    <p>To make our code more readable, we use the semantic tags <span class="tag">&lt;thead&gt;</span>, <span class="tag">&lt;tbody&gt;</span> and <span class="tag">&lt;tfoot&gt;</span> to split out the different sections of our table. The first of these is the <em>table header</em>, <span class="tag">&lt;thead&gt;</span>, which sections the first row(s) of our table which will contain the headings for each column.</p>
+                    <p>Within the <span class="tag">&lt;thead&gt;</span> tags we will then define the row(s) and the cells for that row:</p>
+                    <p>We do this using the <em>table row</em>, <span class="tag">&lt;tr&gt;</span>, and <em>table header</em>, <span class="tag">&lt;th&gt;</span>, tags.</p>
+
+                    <figure>
+                        <img src="images/table-headers.JPG" alt="Code for defining HTML table headers">
+                        <figcaption>The code in this image will create the following table:</figcaption>
+                    </figure>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Heading 1</th>
+                                <th>Heading 2</th>
+                                <th>Heading 3</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <p>This is a good start! It doesn't really look like a table yet, so let's look at adding some more rows!</p>
+                </section>
+                <section id="table-body">
+                    <h4>&lt;tbody&gt;&lt;/tbody&gt;</h4>
+                    <p>Now that we have set up the headers for our columns, we need to add cells below the headings to hold the relevant data.</p>
+                    <p>We do this by creating a <em>body</em>, <span class="tag">&lt;tbody&gt;</span>, section and defining more rows within the body of the table using the <span class="tag">&lt;tr&gt;</span> tags.</p>
+                    <p>The thing we do slightly differently this time, however, is to define each cell using the <em>table data</em>, <span class="tag">&lt;td&gt;</span>, tags. These tags tell the brower that the cells are holding data rather than headings (which would be defined using the previous <span class="tag">&lt;th&gt;</span> tag).</p>
+                    
+                    <figure>
+                        <img src="images/table-body.JPG" alt="Code for defining HTML table body">
+                        <figcaption>The code in this image will create the following table:</figcaption>
+                    </figure>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Heading 1</th>
+                                <th>Heading 2</th>
+                                <th>Heading 3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cell 1</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                            </tr>
+                            <tr>
+                                <td>Cell 4</td>
+                                <td>Cell 5</td>
+                                <td>Cell 6</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Now this looks more like a table! Let's add the final section!</p>
+                </section>
+                <section id="table-foot">
+                    <h4>&lt;tfoot&gt;&lt;/tfoot&gt;</h4>
+                    <p>The final section of a table in HTML is called the <em>table footer</em> and is enclosed with the <span class="tag">&lt;tfoot&gt;</span> tags.</p>
+                    <p>Many tables utilise the final row(s) to sum data in each column or provide quick summaries for each column.</p>
+                    <p>Just like in the previous section of the table, we use the <span class="tag">&lt;tr&gt;</span> and <span class="tag">&lt;td&gt;</span> tags to define each row and cell.</p>
+
+                    <figure>
+                        <img src="./images/table-footers.jpg" alt="Code for defining HTML table footers">
+                        <figcaption>The code in this image will create the following table:</figcaption>
+                    </figure>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Heading 1</th>
+                                <th>Heading 2</th>
+                                <th>Heading 3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cell 1</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                            </tr>
+                            <tr>
+                                <td>Cell 4</td>
+                                <td>Cell 5</td>
+                                <td>Cell 6</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Sum 1</td>
+                                <td>Sum 2</td>
+                                <td>Sum 3</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <p>Now that we have an understanding of how to create a basic table, let's look at how to format the cells to span multiple rows and columns</p>
+                </section>                
+            </section>
+            <section id="formatting">
+                <h2>Cell Spanning</h2>
+                <section id="colspan">
+                    <h3>Cells that span many columns</h3>
+                    <p>As well as having evenly sized cells, we can also make a cell span multiple columns or rows.</p>
+                    <p>We can achieve this using the <em>colspan</em> and <em>rowspan</em> attributes within the cell.</p>
+                    <p>Let's use the basic table from the previous exercise to show this:</p>
+
+                    <figure>
+                        <img src="./images/colspan.JPG" alt="Code for making a cell span multiple columns">
+                        <figcaption>The code in this image will create the following table:</figcaption>
+                    </figure>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Heading 1</th>
+                                <th>Heading 2</th>
+                                <th>Heading 3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cell 1</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Cell 4</td>
+                                <td>Cell 5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section id="rowspan">
+                    <h3>Cells that span many rows</h3>
+                    <p>As well as making a cell span multiple columns, we can also make a cell span multiple rows:</p>
+
+                    <figure>
+                        <img src="./images/rowspan.JPG" alt="Code for making a cell span multiple rows">
+                        <figcaption>The code in this image will create the following table:</figcaption>
+                    </figure>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Heading 1</th>
+                                <th>Heading 2</th>
+                                <th>Heading 3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">Cell 1</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                            </tr>
+                            <tr>
+                                <td>Cell 4</td>
+                                <td>Cell 5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+            <section id="summary">
+                    <h2>Summary</h2>
+                    <p>Let's summarize what we've learnt:</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="special-header">Element</th>
+                                    <th class="special-header">HTML Tag</th>
+                                    <th class="special-header">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Table</td>
+                                    <td><span class="tag">&lt;table&gt;</span></td>
+                                    <td>Defines the table. All other code for the table is enclosed in these tags</td>
+                                </tr>
+                                <tr>
+                                    <td>Table Row</td>
+                                    <td><span class="tag">&lt;tr&gt;</span></td>
+                                    <td>Defines a row within the table</td>
+                                </tr>
+                                <tr>
+                                    <td>Table Heading</td>
+                                    <td><span class="tag">&lt;th&gt;</span></td>
+                                    <td>Defines each cell within the &lt;thead&gt; section</td>
+                                </tr>
+                                <tr>
+                                    <td>Table Data</td>
+                                    <td><span class="tag">&lt;td&gt;</span></td>
+                                    <td>Defines each cell within the rest of the table</td>
+                                </tr>
+                                <tr>
+                                    <td>Table Header</td>
+                                    <td><span class="tag">&lt;thead&gt;</span></td>
+                                    <td>Semantic tag to show the headings section</td>
+                                </tr>
+                                <tr>
+                                    <td>Table Body</td>
+                                    <td><span class="tag">&lt;tbody&gt;</span></td>
+                                    <td>Semantic tag to show the body of the table</td>
+                                </tr>
+                                <tr>
+                                    <td>Table Footer</td>
+                                    <td><span class="tag">&lt;tfoot&gt;</span></td>
+                                    <td>Semantic tag to show to final row(s) of the table</td>
+                                </tr>
+                                <tr>
+                                    <td>Column Span</td>
+                                    <td>&lt;td colspan=""&gt;</td>
+                                    <td>Makes a cell span the specified number of columns</td>
+                                </tr>
+                                <tr>
+                                    <td>Row Span</td>
+                                    <td>&lt;td rowspan=""&gt;</td>
+                                    <td>Makes a cell span the specified number of rows</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+            </section>
+        </main>
+        <footer>
+            <small>Created by Steve Hyatt | <a href="https://www.codecademy.com/profiles/Shyatt92" target="_blank">Codecademy: Shyatt92</a></small>
+        </footer>
+    </body>
+</html>
